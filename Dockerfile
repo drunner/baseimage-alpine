@@ -10,7 +10,7 @@ RUN addgroup -S -g 22022 drgroup
 RUN adduser -S -u 22022 -G drgroup -g '' druser
 
 # create /dr and allow druser write access.
-RUN mkdir /dr && chown druser:drgroup /dr
+RUN mkdir /drunner && chown druser:drgroup /drunner
 
 # We intentionally leave the user as root, as this container
 # can be used to configure pure volume containers, changing
