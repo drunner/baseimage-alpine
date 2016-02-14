@@ -12,10 +12,5 @@ RUN adduser -S -u 22022 -G drgroup -g '' druser
 # create /dr and allow druser write access.
 RUN mkdir /drunner && chown druser:drgroup /drunner
 
-# We intentionally leave the user as root, as this container
-# can be used to configure pure volume containers, changing
-# permissions of / in the volume to druser:drgroup.
-# This lets us work around teething issues in Docker's volume
-# creation.
-# The derived containers need to set the USER to druser.
-#USER druser
+# lock it down to the non-root user.
+USER druser
