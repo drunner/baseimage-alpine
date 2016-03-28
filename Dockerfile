@@ -9,7 +9,6 @@ RUN apk add --update bash curl wget gnupg && rm -rf /var/cache/apk/*
 RUN addgroup -S -g 22022 drgroup
 RUN adduser -S -u 22022 -G drgroup -g '' druser
 
-# create /dr and allow druser write access.
 RUN mkdir /drunner && chown druser:drgroup /drunner
 
 # lock it down to the non-root user.
