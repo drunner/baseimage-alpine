@@ -1,4 +1,4 @@
-# Ansible in a Docker container, accessed via ssh.
+# Simple baseimage for dServices using Alpine Linux (small with package manager!)
 
 FROM alpine
 MAINTAINER j842

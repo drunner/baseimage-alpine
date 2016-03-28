@@ -1,6 +1,4 @@
 # dr-baseimage-alpine
 
-Simple base image from Alpine linux which adds a dr user and group
-and creates the /dr directory with appropriate permissions.
-
-Leaves the user as root, derived containers need to set USER druser.
+Simple base image from Alpine Linux which adds a non-root user and group
+and creates the /drunner directory with appropriate permissions.
