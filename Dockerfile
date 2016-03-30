@@ -12,5 +12,5 @@ RUN adduser -S -u 22022 -G drgroup -g '' druser
 # create /drunner and allow druser write access.
 RUN mkdir /drunner && chown druser:drgroup /drunner
 
-# lock it down to the non-root user.
-USER druser
+# The derived containers need to set the USER to druser.
+#USER druser
