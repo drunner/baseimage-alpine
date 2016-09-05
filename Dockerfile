@@ -1,6 +1,6 @@
 # Simple baseimage for dServices using Alpine Linux (small with package manager!)
 
-FROM alpine:3.3
+FROM alpine
 MAINTAINER j842
 
 RUN apk add --no-cache bash curl wget gnupg
